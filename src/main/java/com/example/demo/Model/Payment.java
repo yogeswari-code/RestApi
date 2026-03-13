@@ -2,33 +2,21 @@ package com.example.demo.Model;
 
 public class Payment {
 
-	private String productname;
-	private int productprice;
+	private String id;
+	private double amount;
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
 	
 	
-	public String getProductname() {
-		return productname;
-	}
-
-	public void setProductname(String productname) {
-		this.productname = productname;
-	}
-
-	public int getProductprice() {
-		return productprice;
-	}
-
-	public void setProductprice(int productprice) {
-		this.productprice = productprice;
-	}
-
-	public static Payment of(String productname, int productprice) {
-		
-		Payment p = new Payment();
-		
-		p.setProductname(productname);
-		p.setProductprice(productprice);
-		
-		return p;
-	}
 }
